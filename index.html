@@ -1,42 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petyapp</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-</head>
-<body>
-<h1>Petya te ayuda a encontrar a tu mascota</h1>
-<img src="assets/img/petyapp.jpeg" alt="Petyapp Logo"/>  
-<p>Imagina una app que pone a tu servicio toda la tecnología disponible para apoyarte en el búsqueda de tu mascota</p>
-<p>Si tu mascota se pierde, Petyapp te ayuda a encontrarla rápidamente mediante notificaciones a usuarios cercanos y herramientas de geolocalización.</p>
-<p>Si encuentras una mascota perdida, Petyapp te facilita reportarlo y contactar con su dueño.</p>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petyapp</title>
 
-<section>
-    <h2>¿Cómo funciona?</h2>
-    <ol>
-        <li>Regístrate en la app y crea un perfil para tu mascota con su foto y detalles importantes.</li>
-        <li>Si tu mascota se pierde, reporta la pérdida en la app. Se enviarán notificaciones a usuarios cercanos.</li>
-        <li>Si encuentras una mascota perdida, usa la app para reportarla y contactar con su dueño.</li>
-    </ol>
-</section>
-<article>
-    <h2>Características principales</h2>
-    <ul>
-        <li>Notificaciones geolocalizadas para usuarios cercanos.</li>
-        <li>Perfil detallado de mascotas con fotos y características.</li>
-        <li>Interfaz fácil de usar para reportar pérdidas y hallazgos.</li>
-    </ul>
-</article>
-<aside>
-    <h2>Beneficios de usar Petyapp</h2>
-    <p>Aumentas las posibilidades de encontrar a tu mascota rápidamente.</p>
-    <p>Contribuyes a una comunidad solidaria de amantes de los animales.</p>
-    <p>Ayudas a otros dueños a recuperar a sus mascotas perdidas</p>
-    <p>Todas las funcionalidades son totalmente gratis</p>
-</aside>
-<footer>
-    <p>© 2024 Petyapp. Todos los derechos reservados.</p>
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  >
+</head>
+
+<body>
+
+  <nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="dark">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">
+        Petya App
+        <img src="assets/img/Logo.png" alt="Petyapp Logo" width="40">
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Funcionalidades</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+            >
+              Únete
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Conoce nuestro proyecto</a></li>
+              <li><a class="dropdown-item" href="#">Colabora con nosotros</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Donaciones</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Búsqueda">
+          <button class="btn btn-outline-light" type="submit">Buscar</button>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+
+    <h1 class="mb-3">Petya te ayuda a encontrar a tu mascota</h1>
+
+    <img
+      src="assets/img/petyapp.jpeg"
+      alt="Imagen representativa de Petyapp"
+      class="img-fluid mb-4"
+    >
+
+    <section class="mb-4">
+      <p>
+        Imagina una app que pone a tu servicio toda la tecnología disponible para
+        apoyarte en la búsqueda de tu mascota.
+      </p>
+      <p>
+        Si tu mascota se pierde, Petyapp te ayuda a encontrarla rápidamente mediante
+        notificaciones a usuarios cercanos y herramientas de geolocalización.
+      </p>
+      <p>
+        Si encuentras una mascota perdida, Petyapp te facilita reportarlo y contactar
+        con su dueño.
+      </p>
+    </section>
+
+    <div class="layout">
+
+      <div class="main-content">
+
+        <section class="mb-4">
+          <h2>¿Cómo funciona?</h2>
+          <ol>
+            <li>Regístrate en la app y crea un perfil para tu mascota.</li>
+            <li>Reporta la pérdida y se notificará a usuarios cercanos.</li>
+            <li>Reporta mascotas encontradas y contacta a su dueño.</li>
+          </ol>
+        </section>
+
+        <article>
+          <h2>Características principales</h2>
+          <ul>
+            <li>Notificaciones geolocalizadas.</li>
+            <li>Perfil detallado de mascotas.</li>
+            <li>Interfaz fácil de usar.</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <aside class="sidebar">
+        <h2>Beneficios de usar Petyapp</h2>
+        <p>Aumentas las posibilidades de encontrar a tu mascota.</p>
+        <p>Contribuyes a una comunidad solidaria.</p>
+        <p>Ayudas a otros dueños.</p>
+        <p>Funcionalidades totalmente gratis.</p>
+      </aside>
+
+    </div>
+
+  </main>
+
+  <footer class="bg-light text-center py-3 mt-4">
+    <p class="mb-0">© 2026 Petyapp. Todos los derechos reservados.</p>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+
 </body>
 </html>

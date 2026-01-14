@@ -1,17 +1,17 @@
 body {
-  width: 1000px;
+  width: 100%;
   margin: 0 auto;
   background-color: lightblue;
   padding: 0 20px 20px 20px;
-  border: 5px solid black;
   text-align: center;
+  align-items: center;
 }
 
 h1, h2 {
   margin: 0;
   padding: 30px 0;
-  color: red;
   text-shadow: 1px 1px 1px black;
+  text-align: center;
 }
 
 img {
@@ -19,4 +19,93 @@ img {
   margin: 0 auto;
   width: 400px;
   height: 300px;
+}
+
+p {
+  font-size: 18px;
+  color: darkblue;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+li, ul, ol {
+  font-size: 18px;
+  color: darkblue;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.navbar-brand img {
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+  color: white;
+  background-color: lightblue;
+}
+
+/* Layout Mobile (por defecto) */
+
+.layout {
+  display: block;
+}
+
+.main-content,
+.sidebar {
+  width: 100%;
+}
+
+.sidebar {
+  margin-top: 30px;
+}
+
+/* Media Query Tablet */
+@media (min-width: 768px) {
+
+  .layout {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .main-content {
+    width: 70%;
+    text-align: left;
+  }
+
+  .sidebar {
+    width: 30%;
+    margin-top: 0;
+    text-align: left;
+  }
+
+  p,
+  li,
+  ul,
+  ol {
+    text-align: left;
+  }
+}
+
+/* Media Query Desktop */
+@media (min-width: 992px) {
+
+  .layout {
+    gap: 40px;
+  }
+
+  .main-content {
+    width: 75%;
+  }
+
+  .sidebar {
+    width: 25%;
+  }
+
+  body {
+    max-width: 1200px;
+  }
 }
