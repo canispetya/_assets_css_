@@ -43,9 +43,27 @@ li, ul, ol {
 }
 
 footer {
-  color: white;
   background-color: lightblue;
+  text-align: center;
 }
+
+#btnScrollTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 14px;
+    font-size: 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+
+#btnScrollTop:hover {
+    opacity: 0.8;
+}
+
 
 /* Layout Mobile (por defecto) */
 
